@@ -1,0 +1,10 @@
+Installer revision: 1.0.2.2
+Application baseline: NOS-Pipe 1.0.2 SETTINGS-EN
+
+Installer-only changes:
+- Added the persistent NOS-Pipe-Wallpaper.exe utility and Start-menu shortcut.
+- The helper reads the current primary-screen size and existing desktop color.
+- It composites the original transparent PNG into an exact-resolution BMP.
+- The generated wallpaper is stored in the current user's APPDATA.
+- No prebuilt aspect-ratio backgrounds and no Java wallpaper helper are used.
+- Russian and English installer sessions open their matching README file.
