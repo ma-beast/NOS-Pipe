@@ -1,0 +1,7 @@
+NOS-Pipe 0.9.7 speed changes retained from 0.9.6
+
+Search: all configured gateway searches run in parallel using ordinary Java
+Thread objects, compatible with Java 5.
+
+Playback source resolution: all configured gateway probes also run in parallel;
+the resolver waits for their results and then selects the best muxed candidate.

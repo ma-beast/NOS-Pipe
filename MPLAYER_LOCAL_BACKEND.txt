@@ -1,0 +1,29 @@
+NOS Pipe 0.9.7 — MPlayer local backend
+
+Rules for this build:
+- mplayer.exe must be in the same folder as NOS-Pipe.jar.
+- NOS Pipe does not search PATH or other system folders for MPlayer.
+- At default 360p MPlayer is started as:
+    mplayer.exe "muxed-video-URL"
+- At a manually selected non-360 height the experimental launch is:
+    mplayer.exe -audiofile "audio-URL" "video-only-URL"
+
+Mac auto mode names:
+- Intel: mplayer~.x86
+- PowerPC: mplayer~.ppc
+- NOS-Pipe uses a local HTTP/1.0 bridge for muxed playback because old
+  Tiger-compatible MPlayer builds reject modern upstream HTTP 206 responses.
+- The first request is translated to a simple HTTP 200 response. Later byte
+  ranges are forwarded and returned as simple HTTP 206 responses, allowing the
+  MOV demuxer to locate MP4 headers and enabling stream seeking.
+- Loopback requests are concurrent because this 2006 MPlayer can keep the
+  initial stream open while opening a second connection for the movie header.
+- No -vo or -ao player-output options are added.
+- mplayer/input.conf maps Up/Down to volume +1/-1.
+- MPlayer stdin is closed immediately; merged stdout/stderr is drained.
+- Release startup creates no log. Optional -Dnospipe.log=true diagnostics are
+  overwritten at each diagnostic launch.
+- Every used media URL must return HTTP 200 or 206 to a tiny range preflight.
+- An incomplete/rejected pair falls back to the muxed resolver.
+- The resolver/search logic is inherited from the accepted fast-all-source base.
+- Java bytecode target: Java 5 (class version 49.0).

@@ -1,0 +1,2 @@
+
+Resolver fix: audioQuality/audioSampleRate/audioChannels no longer mark an adaptive audio-only object as muxed.

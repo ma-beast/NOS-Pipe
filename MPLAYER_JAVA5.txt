@@ -1,0 +1,8 @@
+NOS-Pipe 0.9.7 — MPlayer Java 5 experimental dual-stream playback
+
+MPlayer replaces VLC in this test build.
+
+The default video.height=360 keeps the tested MUXED one-URL path. A manually
+selected different height enables separate video + audio selection and starts
+MPlayer with -audiofile. Both URLs must pass HTTP preflight. The resolver falls
+back to muxed playback when the experimental pair is unavailable or rejected.

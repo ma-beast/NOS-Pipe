@@ -1,0 +1,17 @@
+NOS-Pipe 0.9.7 - muxed / dual-stream resolver test
+
+This build uses the corrected global source-resolution path for the legacy
+MPlayer backend:
+
+- the selected result's gateway is probed first;
+- its media URL must pass an HTTP 200/206 range preflight before launch;
+- if it has no usable muxed stream, all remaining sources run in parallel;
+- fallback media URLs are preflighted in score order;
+- results are collected before playback starts;
+- video.height=360 accepts only muxed streams;
+- any other manually selected height first requires a complete video-only and
+  audio-only pair from the same gateway;
+- both media URLs are preflighted before MPlayer launch;
+- failed dual-stream resolution or startup falls back to muxed playback.
+
+Dual-stream launch uses: mplayer.exe -audiofile AUDIO_URL VIDEO_URL.
