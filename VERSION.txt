@@ -1,0 +1,10 @@
+NOS-Pipe 1.0.2
+
+Release baseline: 0.9.8.1 MAC-BRIDGE-FIX-2.
+Windows release runtime: OpenJDK 7u80 unofficial i586, kept complete.
+Java bytecode level: 49 (Java 5).
+Default diagnostic logging: disabled.
+RC2: Windows Program Files detection, remembered window bounds, reliable search
+text selection and complete playback-setting reload.
+1.0.1: detached Windows BAT launch and preferred-language audio selection.
+1.0.2: reject dubbed audio tracks; fall back to muxed when original is absent.
