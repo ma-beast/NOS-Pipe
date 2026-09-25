@@ -1,0 +1,17 @@
+NOS-Pipe 1.0.2 — project credits
+================================
+
+NOS-Pipe was developed from the ideas and open source of notPipe and JTube,
+then substantially adapted for desktop Java 5, legacy computers, MPlayer,
+multiple gateways, unusual display sizes and keyboard-only operation.
+
+notPipe by Gohoski:
+  https://github.com/gohoski/notPipe
+  notPipe is published under WTFPL version 2. Its separately credited NNJSON
+  component is published under the MIT License.
+
+JTube:
+  based in part on the open JTube-master source archive retained with the
+  NOS-Pipe development history.
+
+NOS-Pipe is not an official Google/YouTube client.
