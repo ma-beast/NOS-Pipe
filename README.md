@@ -1,7 +1,7 @@
 <a id="top"></a>
 
 <p align="center">
-  <img src="docs/images/NOS-Pipe-cat.png" alt="NOS-Pipe pixel cat" width="360">
+  <img src="docs/images/NOS-Pipe-banner.png" alt="NOS-Pipe — YouTube for old computers" width="100%">
 </p>
 
 [English](#english) | [Русский](#russian)
