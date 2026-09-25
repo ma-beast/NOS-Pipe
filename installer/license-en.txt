@@ -1,0 +1,27 @@
+IMPORTANT INFORMATION AND LICENSES
+
+NOS-Pipe is free experimental software for watching YouTube on old computers.
+It is supplied "as is", without warranty of any kind. The author is not
+responsible for external gateways, YouTube, media players, data loss, or any
+other direct or indirect consequence of use.
+
+By continuing, you confirm that you have read this information and use the
+program at your own risk.
+
+The installer contains third-party free software:
+
+OpenJDK 7u80 unofficial Windows i586 build
+  GNU General Public License version 2 with the Classpath Exception.
+  Complete license texts are installed in the jre directory.
+  Source RI: https://jdk.java.net/java-se-ri/7
+
+MPlayer generic r38677 + FFmpeg g1bce40cb73
+  MPlayer and its included libraries are free software. The binary build and
+  corresponding source archive are published at:
+  https://sourceforge.net/projects/mplayer-win32/files/MPlayer%20and%20MEncoder/r38677%2Bg1bce40cb73/
+
+NOS-Pipe was created from ideas and open code from notPipe and JTube.
+Additional notices are installed in the licenses directory.
+
+NOS-Pipe is not a product of Google, YouTube, Invidious, or Piped.
+
